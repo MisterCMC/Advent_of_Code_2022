@@ -16,11 +16,6 @@ for i in range(0, len(data)):
             continue
         food = int(cals_lst[j])
         calories = calories + food
-    print(calories)
-    print(first_calories)
-    print(second_calories)
-    print(third_calories)
-    print('\n')
     if calories > first_calories:
         if first_calories > second_calories:
             if second_calories > third_calories:
@@ -36,7 +31,4 @@ for i in range(0, len(data)):
     elif calories > third_calories:
         third_calories = calories
 total_calories = first_calories + second_calories + third_calories
-print(first_calories)
-print(second_calories)
-print(third_calories)
 print(total_calories)
